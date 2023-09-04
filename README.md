@@ -12,3 +12,5 @@
 ## Реализовано:
 
 - Redux store
+- Роутинг между страницами Login и Event
+- UI layout

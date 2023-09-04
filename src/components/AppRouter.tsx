@@ -3,7 +3,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import { RouteNames, privatRoutes, publicRoutes } from "../router";
 
 export const AppRouter: React.FC = () => {
-  const auth: boolean = true;
+  const auth: boolean = false;
   return auth ? (
     <Routes>
       {privatRoutes.map((route) => (
