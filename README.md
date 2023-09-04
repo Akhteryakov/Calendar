@@ -13,4 +13,5 @@
 
 - Redux store
 - Роутинг между страницами Login и Event
-- UI layout
+- UI layout Ant Design
+- Состояние авторизации
