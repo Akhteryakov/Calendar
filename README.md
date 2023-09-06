@@ -5,6 +5,7 @@
 ## Технологии:
 
 - React
+  - React Router
 - TypeScript
 - Redux
 - Ant Design
@@ -15,3 +16,4 @@
 - Роутинг между страницами Login и Event
 - UI layout Ant Design
 - Состояние авторизации
+- Логика логина/разлогина
