@@ -5,11 +5,11 @@ import { useTypedSelector } from "../hooks/useTypedSelector";
 import { Dispatch } from "redux";
 import { useDispatch } from "react-redux";
 import { AuthActionCreators } from "../store/reducers/auth/action-creators";
+import { useActions } from "../hooks/useActions";
 
 const Navbar: FC = () => {
   const { isAuth, user } = useTypedSelector((state) => state.auth);
-  const navigate = useNavigate();
-  const dispatch: Dispatch<any> = useDispatch();
+  const { logout } = useActions();
 
   return (
     <Layout.Header>
@@ -21,10 +21,7 @@ const Navbar: FC = () => {
           <>
             <Menu theme="dark" mode="horizontal" selectable={false}>
               <div style={{ color: "white" }}> {user.username} </div>
-              <Menu.Item
-                onClick={() => dispatch(AuthActionCreators.logout())}
-                key={1}
-              >
+              <Menu.Item onClick={() => logout()} key={1}>
                 Logout
               </Menu.Item>
             </Menu>
